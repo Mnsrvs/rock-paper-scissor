@@ -37,6 +37,9 @@ function playRound(playerSelection, computerSelection) {
   }
 }
 
+let playerScore = 0;
+let computerScore = 0;
+
 function game() {
   for (let i = 0; i < 5; i++) {
     let playerSelection = prompt('Enter rock paper scissors', '');
