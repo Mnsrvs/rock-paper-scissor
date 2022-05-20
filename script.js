@@ -1,8 +1,9 @@
+//randomly generate computer choice
 function computerPlay() {
   const choices = ['rock', 'paper', 'scissors'];
   return choices[Math.floor(Math.random() * 3)];
 }
-
+//function to decide who is the winner
 function playRound(playerSelection, computerSelection) {
   if (playerSelection === computerSelection) {
     return 'Tie game!';
@@ -38,6 +39,7 @@ function playRound(playerSelection, computerSelection) {
     }
   }
 
+//statement that will show if you input other than rock paper scissors
   if (playerSelection !== 'rock' || 'paper' || 'scissors' || null) {
     return 'Invalid input';
   }
@@ -45,7 +47,7 @@ function playRound(playerSelection, computerSelection) {
 
 let playerScore = 0;
 let computerScore = 0;
-
+//function that play the game 5 rounds
 function game() {
   for (let i = 0; i < 5; i++) {
     let playerChoice= prompt('Enter rock paper scissors', '');
@@ -53,6 +55,7 @@ function game() {
     let computerChoice = computerPlay();
     let rounds = playRound(playerChoice, computerChoice);
 
+    //function that display who is the winner after 5 rounds
     function result() {
       if(playerScore > computerScore) {
         return 'Player is the champion!';
