@@ -36,3 +36,7 @@ function playRound(playerSelection, computerSelection) {
     return 'Invalid input';
   }
 }
+
+function game() {
+  
+}
