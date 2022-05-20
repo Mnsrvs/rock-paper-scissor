@@ -48,10 +48,10 @@ let computerScore = 0;
 
 function game() {
   for (let i = 0; i < 5; i++) {
-    let playerSelection = prompt('Enter rock paper scissors', '');
-    playerSelection = playerSelection.toLowerCase();
-    let computerSelection = computerPlay();
-    let rounds = playRound(playerSelection, computerSelection);
+    let playerChoice= prompt('Enter rock paper scissors', '');
+    playerChoice = playerChoice.toLowerCase();
+    let computerChoice = computerPlay();
+    let rounds = playRound(playerChoice, computerChoice);
 
     function result() {
       if(playerScore > computerScore) {
@@ -62,5 +62,12 @@ function game() {
         return 'Draw!';
       }
     }
+
+    console.log(playerChoice);
+    console.log(computerChoice);
+    console.log(rounds);
+    console.log(`Score: ${playerScore} - ${computerScore}`);
+    console.log('----------------------------------------------');
   }
+  console.log(result());
 }
