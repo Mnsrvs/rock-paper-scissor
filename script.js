@@ -54,7 +54,13 @@ function game() {
     let rounds = playRound(playerSelection, computerSelection);
 
     function result() {
-      
+      if(playerScore > computerScore) {
+        return 'Player is the champion!';
+      } else if (playerScore < computerScore) {
+        return 'Computer is the champion!';
+      } else {
+        return 'Draw!';
+      }
     }
   }
 }
