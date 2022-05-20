@@ -43,5 +43,9 @@ function game() {
     playerSelection = playerSelection.toLowerCase();
     let computerSelection = computerPlay();
     let rounds = playRound(playerSelection, computerSelection);
+
+    function result() {
+      
+    }
   }
 }
