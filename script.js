@@ -42,5 +42,6 @@ function game() {
     let playerSelection = prompt('Enter rock paper scissors', '');
     playerSelection = playerSelection.toLowerCase();
     let computerSelection = computerPlay();
+    let rounds = playRound(playerSelection, computerSelection);
   }
 }
