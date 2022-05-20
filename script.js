@@ -3,6 +3,7 @@ function computerPlay() {
   const choices = ['rock', 'paper', 'scissors'];
   return choices[Math.floor(Math.random() * 3)];
 }
+
 //function to decide who is the winner
 function playRound(playerSelection, computerSelection) {
   if (playerSelection === computerSelection) {
@@ -47,6 +48,7 @@ function playRound(playerSelection, computerSelection) {
 
 let playerScore = 0;
 let computerScore = 0;
+
 //function that play the game 5 rounds
 function game() {
   for (let i = 0; i < 5; i++) {
